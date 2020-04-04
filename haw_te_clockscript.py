@@ -9,10 +9,10 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
 #GPIO Pin Belegung
-ROT = 02
+ROT = 2
 GELB = 14
 GRUEN = 15
-TASTER = 07
+TASTER = 7
 
 #Richtung der GPIO-Pins festlegen (IN / OUT)
 GPIO.setup(ROT, GPIO.OUT) #rot
