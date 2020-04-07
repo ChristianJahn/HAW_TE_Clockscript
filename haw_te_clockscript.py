@@ -34,11 +34,11 @@ def ledtest():
 			GPIO.output(GRUEN, False)
 			GPIO.output(GELB, True)
 			GPIO.output(ROT, True)
-			time.sleep(0.5)
+			time.sleep(0.25)
 			GPIO.output(GRUEN, True)
 			GPIO.output(GELB, False)
 			GPIO.output(ROT, False)
-			time.sleep(0.5)
+			time.sleep(0.25)
 
 def modulateSeconds():
    while True:
@@ -49,9 +49,11 @@ def modulateSeconds():
 	
 def moonphaseIndicator():
    while True:
-	sleep(25)
+	time.sleep(34439)
 	for j in range(1,121):
 		GPIO.output(MOND, True)
+		time.sleep(1)
+		
 	GPIO.output(MOND, False)
 
 
